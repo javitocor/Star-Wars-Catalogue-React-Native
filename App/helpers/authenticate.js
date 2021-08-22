@@ -1,6 +1,6 @@
 const authenticate = (user) =>{
-  if (user != null) {
-    return user;
+  if (user !== null) {
+    return true;
   }
   return false;
 }

@@ -75,9 +75,9 @@ const styles = StyleSheet.create({
   }
 });
 
-const image = { uri: "https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_00cbf8a9.jpeg?region=0%2C0%2C2048%2C1600" }
+// const image = { uri: "https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_00cbf8a9.jpeg?region=0%2C0%2C2048%2C1600" }
 
-const Login = ({navigation}) => {
+const Login = ({navigation, saveUser}) => {
   const [value, setValue] = useState('');
   const [scrollEnabled, setScrollEnabled] = useState(false);
   return (
@@ -109,7 +109,7 @@ const Login = ({navigation}) => {
                 <Button
                   text="Join"
                   onPress={() => 
-                    authenticateUser(value) ? navigation.push('Home', {title: 'Home'}) : Alert.alert('Please add a Username')
+                    saveUser(value) !==  null ? navigation.navigate('Home', {title: 'Home'}) : Alert.alert('Please add a Username')
                 }
                 />
                 <KeyboardSpacer onToggle={(visible) => setScrollEnabled(visible)} />
@@ -123,11 +123,11 @@ const Login = ({navigation}) => {
 };
 
 Login.propTypes = {
-  authenticateUser: PropTypes.func.isRequired
+  saveUser: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  authenticateUser,
+  saveUser:authenticateUser,
 }, dispatch);
 
 export default connect(null, mapDispatchToProps)(Login);
