@@ -1,7 +1,7 @@
 function dynamicImages (name) {
   if (name==='Films') {
     return require('../assets/images/Films.jpg')
-  } if (name==='people'){
+  } if (name==='Characters'){
     return require('../assets/images/people.jpg')
   } if (name==='Spaceships'){
     return require('../assets/images/Spaceships.jpg')

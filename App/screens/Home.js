@@ -64,10 +64,10 @@ const Home = ({navigation}) => {
               }
               />
               <LinkToItems 
-                name='people' 
+                name='Characters' 
                 onButtonPress={() =>
                 navigation.push('Items', {
-                  title: 'Characters',
+                  title: 'people',
                 })
               }
               />
@@ -75,7 +75,7 @@ const Home = ({navigation}) => {
                 name='Spaceships' 
                 onButtonPress={() =>
                 navigation.push('Items', {
-                  title: 'spaceships',
+                  title: 'starships',
                 })
               }
               />

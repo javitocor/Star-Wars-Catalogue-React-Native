@@ -8,7 +8,7 @@ import {
   ImageBackground,
   Text,
 } from 'react-native';
-import { TouchableOpacity} from 'react-native-gesture-handler'
+import { TouchableOpacity} from 'react-native-gesture-handler';
 import { Entypo } from '@expo/vector-icons';
 import colors from '../constants/colors';
 
@@ -79,7 +79,7 @@ function HeaderTitle(props) {
             {props.auth.user}
             !
           </Text>
-          <Text style={styles.headerTextBottom}>{props.route.params.title.toUpperCase()}</Text>
+          <Text style={styles.headerTextBottom}>{props.route.params.title === 'people' ? 'CHARACTERS' : props.route.params.title.toUpperCase()}</Text>
         </View>
         <View style={styles.right} />
       </View>

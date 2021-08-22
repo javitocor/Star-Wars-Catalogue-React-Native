@@ -55,7 +55,7 @@ const LinkToItems = ({ name, onButtonPress, ...props }) => {
             style={styles.topicImage}
             resizeMode="contain"
           />
-          <Text style={styles.buttonText}>{name === 'people' ? 'Characters': name }</Text>
+          <Text style={styles.buttonText}>{name}</Text>
         </View>
       </TouchableOpacity>
     </View>

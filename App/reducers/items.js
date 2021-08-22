@@ -45,6 +45,7 @@ const itemReducer = (state = initialStateItems, action) => {
     case UPDATE_ITEMS:
       return {
         ...state,
+        pending: false,
         next: action.data.next,
         itemsList: [...state.itemsList, ...action.data.results],
       };

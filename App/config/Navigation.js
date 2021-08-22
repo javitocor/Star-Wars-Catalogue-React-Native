@@ -14,7 +14,7 @@ const MainStackScreen = () => (
   <MainStack.Navigator>
     <MainStack.Screen name="Login" component={Login} options={{ headerShown: false }} />
     <MainStack.Screen name="Home" component={Home} options={{header: (props) => <HeaderTitle {...props} />}} />
-    <MainStack.Screen name="Items" component={Items} />
+    <MainStack.Screen name="Items" component={Items} options={{header: (props) => <HeaderTitle {...props} />}} />
     <MainStack.Screen name="ItemCard" component={ItemCard} />
     <MainStack.Screen name="Options" component={Options} />
   </MainStack.Navigator>
