@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
 const ItemCard = (props) => {
   const [filteredItem, setFilteredItem] = useState(null);
   const [keys, setKeys] = useState([]);
+  const [info,setInfo] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const {navigation, route, getItem} = props;
   const { url } = route.params;
@@ -52,6 +53,7 @@ const ItemCard = (props) => {
     (async () => {
       try {
        const data = await getItem(null, url, null);
+       setInfo(data)
        const keysNeeded = displayItem(data);
        setKeys(keysNeeded);
        const filtered = await itemChecker(data, keysNeeded);
@@ -77,7 +79,7 @@ const ItemCard = (props) => {
           return (
             (checkKey(item, filteredItem[1]) 
               ? <KeyList key={Date.now()} value={item} object={filteredItem[0]} navigation={navigation} />
-              : <KeySingle key={index} item={props.items.item} value={item} />
+              : <KeySingle key={index} item={info} value={item} />
             )
           );
         }}
