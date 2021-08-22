@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { useEffect } from 'react';
 import {
   View,
@@ -42,7 +43,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center'
-  }
+  },
+  container: {    
+    flex: 1,
+    backgroundColor: colors.white, 
+    marginTop: screen.height*0.1, 
+  },
 });
 
 const Items = (props) => {
@@ -54,13 +60,7 @@ const Items = (props) => {
   }, []);
 
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: colors.white, 
-        marginTop: screen.height*0.1, 
-      }}
-    >
+    <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={colors.black} />
       <ImageBackground source={require('../assets/images/space.jpg')} resizeMode="cover" style={styles.bgimage}>
         {props.items.pending ? (
@@ -115,6 +115,7 @@ Items.propTypes = {
   items: PropTypes.shape({
     error: PropTypes.object,
     pending: PropTypes.bool,
+    next: PropTypes.string,
     itemsList: PropTypes.arrayOf(PropTypes.object),
   }).isRequired,
   getAllItems: PropTypes.func.isRequired,
