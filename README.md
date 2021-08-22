@@ -55,14 +55,14 @@ Additional description about the project and its features.
 
 ### Usage
 To have this app on your pc, you need to:
-* [download](https://github.com/javitocor/currency-converter-react-native/archive/master.zip) or clone this repo:
+* [download](https://github.com/javitocor/Star-Wars-Catalogue-React-Native/archive/master.zip) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:javitocor/currency-converter-react-native.git
+    git@github.com:javitocor/Star-Wars-Catalogue-React-Native.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/javitocor/currency-converter-react-native.git
+    https://github.com/javitocor/Star-Wars-Catalogue-React-Native.git
   ```
 
 * In the project directory, you can run:
@@ -83,7 +83,7 @@ To have this app on your pc, you need to:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/javitocor/currency-converter-react-native/issues).
+Feel free to check the [issues page](https://github.com/javitocor/Star-Wars-Catalogue-React-Native/issues).
 
 ## Show your support
 
@@ -100,11 +100,11 @@ This project is [MIT](lic.url) licensed.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/javitocor/currency-converter-react-native.svg?style=flat-square
-[contributors-url]: https://github.com/javitocor/currency-converter-react-native/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/javitocor/currency-converter-react-native.svg?style=flat-square
-[forks-url]: https://github.com/javitocor/currency-converter-react-native/network/members
-[stars-shield]: https://img.shields.io/github/stars/javitocor/currency-converter-react-native.svg?style=flat-square
-[stars-url]: https://github.com/javitocor/currency-converter-react-native/stargazers
-[issues-shield]: https://img.shields.io/github/issues/javitocor/currency-converter-react-native.svg?style=flat-square
-[issues-url]: https://github.com/javitocor/currency-converter-react-native/issues
+[contributors-shield]: https://img.shields.io/github/contributors/javitocor/Star-Wars-Catalogue-React-Native.svg?style=flat-square
+[contributors-url]: https://github.com/javitocor/Star-Wars-Catalogue-React-Native/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/javitocor/Star-Wars-Catalogue-React-Native.svg?style=flat-square
+[forks-url]: https://github.com/javitocor/Star-Wars-Catalogue-React-Native/network/members
+[stars-shield]: https://img.shields.io/github/stars/javitocor/Star-Wars-Catalogue-React-Native.svg?style=flat-square
+[stars-url]: https://github.com/javitocor/Star-Wars-Catalogue-React-Native/stargazers
+[issues-shield]: https://img.shields.io/github/issues/javitocor/Star-Wars-Catalogue-React-Native.svg?style=flat-square
+[issues-url]: https://github.com/javitocor/Star-Wars-Catalogue-React-Native/issues
